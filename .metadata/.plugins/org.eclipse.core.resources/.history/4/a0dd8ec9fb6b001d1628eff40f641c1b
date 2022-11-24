@@ -1,0 +1,40 @@
+package com.bhavna.tester;
+
+import com.bhavna.bean.State;
+import com.bhavna.bean.ZipCode;
+import com.bhavna.service.ZipServicev2;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//creating object of State class with sample data
+		State stateObj=new State("India", "Delhi");
+		//printing the object data
+		System.out.println(stateObj);
+		System.out.println();
+		
+		//creating object of ZipServicev2 class
+		ZipServicev2 zipObj=new ZipServicev2();
+		//adding data to the address list of zipObj
+		zipObj.setAddress(new ZipCode("India", "Haryanan", "Fariadabad",121003));
+		zipObj.setAddress(new ZipCode("India", "Haryanan", "Ambala",133003));
+		zipObj.setAddress(new ZipCode("India", "Amritsar", "Punjab",143001));
+		zipObj.setAddress(new ZipCode("India", "Andhra Pradesh", "Anantpur",515001));
+		zipObj.setAddress(new ZipCode("India", "Rajasthan", "Bharatpur",321001));
+		zipObj.setAddress(new ZipCode("India", "Punjab", "Chandigarh",160017));
+		zipObj.setAddress(new ZipCode("India", "Maharashtra", "Nashik", 422001));
+		zipObj.setAddress(new ZipCode("India", "Madhya Pradesh", "Gwalior",474001));
+		zipObj.setAddress(new ZipCode("India", "Madhya Pradesh", "Indore",452001));
+		zipObj.setAddress(new ZipCode("India", "Uttar Pradesh", "Meerut",250001));
+		//printing complete address of specified zip code
+		System.out.println(zipObj.getAddress(121002));
+		System.out.println();
+		System.out.println(zipObj.getAddress(1118080));
+		System.out.println();
+		zipObj.printAddress(121003);
+		System.out.println();
+		zipObj.printAllAddress();
+	}
+
+}

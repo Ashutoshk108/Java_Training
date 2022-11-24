@@ -1,0 +1,5 @@
+package com.bhavna.training;
+
+public interface ZipServicev1 {
+
+}

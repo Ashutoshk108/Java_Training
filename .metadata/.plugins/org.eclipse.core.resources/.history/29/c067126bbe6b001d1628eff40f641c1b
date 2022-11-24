@@ -1,0 +1,27 @@
+package com.bhavna.training;
+
+import com.bhavna.bean.ZipCode;
+import com.bhavna.service.ZipServicev1;
+
+public class ZipServicev2 implements ZipServicev1{
+	public void setAddress(ZipCode zipObj) {
+		address.add(zipObj);
+	}
+	
+	public String getAddress(int zipCode) {
+		for(int i=0;i<address.size();i++) {
+			if(((ZipCode) address.get(i)).getZipCode()==zipCode) {
+				return address.get(i).toString();
+			}
+		}
+		return "No such address exist";
+	}
+	
+	public void printAddress(int zipCode) {
+		for(int i=0;i<address.size();i++) {
+			if(((ZipCode) address.get(i)).getZipCode()==zipCode) {
+				System.out.println(address.get(i));
+			}
+		}
+	}
+}

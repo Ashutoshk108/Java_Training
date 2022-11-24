@@ -1,0 +1,6 @@
+package com.bhavna.training;
+
+public class Zipcode {
+	private int zipCode;
+
+}

@@ -1,0 +1,16 @@
+package com.bhavna.service;
+
+import java.util.*;
+
+import com.bhavna.bean.ZipCode;
+
+public interface ZipServicev1 {
+	static ArrayList<Object> address=new ArrayList<Object>();
+	
+	public abstract void setAddress(ZipCode zipObj);
+	
+	public abstract String getAddress(int zipCode);
+	
+	public abstract void printAddress(int zipCode);
+
+}
