@@ -5,5 +5,6 @@
  * @author Ashutosh.Mishra
  *
  */
-module Demo {
+module Task4 {
+	requires java.sql;
 }
