@@ -35,7 +35,7 @@ public class Operations {
 	public static void insertDepData(Department dep) {
 		try {
 			Connection con=ConnecClass.createConnection();
-			String query="insert into deparatment(depID, depName, depLocation) values(?,?,?)";
+			String query="insert into department(dep_ID, dep_Name, dep_Location) values(?,?,?)";
 			
 			PreparedStatement pstmnt=con.prepareStatement(query);
 			
