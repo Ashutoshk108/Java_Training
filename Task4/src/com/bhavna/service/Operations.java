@@ -78,7 +78,7 @@ public class Operations {
 	public static void fetchData() {
 		try {
 			Connection con=ConnecClass.createConnection();
-			String query="select * from employee as e inner join department as d on e.dep_ID=d.dep_Id";
+			String query="select * from employee as e inner join department as d on e.dep_ID=d.dep_ID";
 			
 			PreparedStatement pstmnt=con.prepareStatement(query);
 			

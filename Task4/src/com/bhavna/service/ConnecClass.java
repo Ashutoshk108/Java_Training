@@ -16,7 +16,7 @@ public class ConnecClass{
 			String url="jdbc:mysql://localhost:3306/organization?autoReconnect=true&useSSL=false";
 			
 			con=DriverManager.getConnection(url,user,password);
-			System.out.println("Connection established");
+			//System.out.println("Connection established");
 		}catch(Exception e) {
 			e.printStackTrace();
 		}

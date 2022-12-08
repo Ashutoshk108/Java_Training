@@ -1,5 +1,0 @@
-package com.bhavna.training;
-
-public interface ZipServicev1 {
-	public String getAddress();
-}

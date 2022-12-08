@@ -1,6 +1,6 @@
 package com.bhavna.dao;
 
-import java.sql.Date;
+//import java.sql.Date;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Scanner;
@@ -49,6 +49,7 @@ public class Datadao {
 				e.printStackTrace();
 			}
 	}
+	
 	public void updateEData() {
 		try {
 			System.out.print("Enter the employee id of the employee whose data needs to updated: ");

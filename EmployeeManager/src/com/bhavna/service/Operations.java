@@ -27,6 +27,8 @@ public class Operations {
 				empMap.get(s.getLocation()).add(s.getName());
 			}
 		});
+		
+		
 		System.out.println(empMap);
 	}
 	
@@ -38,7 +40,7 @@ public class Operations {
 		});
 	}
 	
-	public List<Employee> sortEmployeeBasedOnNameLocation(ArrayList empLst){
+	public List<Employee> sortEmployeeBasedOnNameLocation(ArrayList<Employee> empLst){
 		Comparator<Employee> comparingAttributes=Comparator.comparing(Employee::getName).thenComparing(Employee::getLocation);
 		List<Employee> sortedEmployees=(List<Employee>) empLst.stream().sorted(comparingAttributes).collect(Collectors.toList());
 		

@@ -4,6 +4,7 @@ public class Department {
 	private int depId;
 	private String depName;
 	private String depLocation;
+	
 	public int getDepId() {
 		return depId;
 	}
@@ -22,6 +23,7 @@ public class Department {
 	public void setDepLocation(String depLocation) {
 		this.depLocation = depLocation;
 	}
+	
 	public Department(int depId, String depName, String depLocation) {
 		super();
 		this.depId = depId;
