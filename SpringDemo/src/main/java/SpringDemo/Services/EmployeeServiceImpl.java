@@ -33,7 +33,15 @@ public class EmployeeServiceImpl implements EmployeeService{
 	public List<Employee> getActiveEmployees() {
 		// TODO Auto-generated method stub
 		//List<Employee> res=empLst.stream().filter(s->s.getStatus().contentEquals("Active")).collect(Collectors.toList());
-		return employeeDao.findAll().stream().filter(s->s.getStatus().contentEquals("Active")).collect(Collectors.toList());
+		List<Employee> empLst=employeeDao.findAll().stream().filter(s->s.getStatus().contentEquals("Active")).collect(Collectors.toList());
+		try {
+			if(empLst.size()==0) {
+				throw new Exception("No Active Employee");
+			}
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		return empLst;
 	}
 
 	@Override

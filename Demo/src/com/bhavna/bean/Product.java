@@ -1,3 +1,4 @@
+package com.bhavna.bean;
 
 public class Product {
 	private String name;

@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+encoding//src/main/java/com/bhavna/bean/Person.java=UTF-8
+encoding//src/main/java/com/bhavna/service/PersonServiceImpl.java=UTF-8
+encoding//src/main/java/com/bhavna/service/PersonServiceImplService.java=UTF-8
+encoding//src/main/java/com/bhavna/service/PersonServiceImplServiceLocator.java=UTF-8
+encoding//src/main/java/com/bhavna/service/PersonServiceImplSoapBindingStub.java=UTF-8
+encoding/<project>=UTF-8
