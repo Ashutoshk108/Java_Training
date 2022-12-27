@@ -13,20 +13,6 @@ public class Employee {
 	private String jobTitle;
 	private String gender;
 
-	public Employee() {
-		super();
-	}
-
-	public Employee(int id, String name, int age, long salary, String jobTitle, String gender) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.age = age;
-		this.salary = salary;
-		this.jobTitle = jobTitle;
-		this.gender = gender;
-	}
-
 	public int getId() {
 		return id;
 	}
@@ -72,6 +58,20 @@ public class Employee {
 	}
 
 	public void setGender(String gender) {
+		this.gender = gender;
+	}
+	
+	public Employee() {
+		super();
+	}
+
+	public Employee(int id, String name, int age, long salary, String jobTitle, String gender) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.age = age;
+		this.salary = salary;
+		this.jobTitle = jobTitle;
 		this.gender = gender;
 	}
 

@@ -1,6 +1,5 @@
 package com.bhavna.tester;
 
-import com.bhavna.dao.Datadao;
 import com.bhavna.service.Operations;
 
 public class Main {
