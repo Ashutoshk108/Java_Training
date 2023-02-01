@@ -37,9 +37,9 @@
 		<item value="org.sonatype.m2e.mavenarchiver.feature:0.17.5.202002191804"/>
 	</list>
 	<section name="NewWizardAction">
-		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.m2e.core.wizards.Maven2ProjectWizard"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
-			<item value="org.eclipse.jdt.ui.java"/>
+			<item value="org.eclipse.m2e"/>
 		</list>
 	</section>
 	<section name="SmartImportWizard">
@@ -48,6 +48,12 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="D:\SQL\My Code Snippets\Java\Demo_Spring_MVC_With_JPA_Integration_Bhavana"/>
+			<item value="C:\Users\ashutosh.mishra\Downloads\springorm"/>
+			<item value="D:\SQL\My Code Snippets\Java\SpringMVC"/>
+			<item value="D:\SQL\My Code Snippets\Java\demoSpringMVC"/>
+			<item value="C:\Users\ashutosh.mishra\Downloads\Springmvcpractice"/>
+			<item value="D:\SQL\My Code Snippets\Java\com.bhavna.springCore"/>
 			<item value="C:\Users\ashutosh.mishra\eclipse-workspace\SpringDemo"/>
 			<item value="C:\Users\ashutosh.mishra\eclipse-workspace\Task4"/>
 			<item value="D:\SQL\My Code Snippets\Java\21-09-2022"/>

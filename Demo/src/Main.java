@@ -14,8 +14,7 @@ public class Main {
 		
 		List<String> lstName=tempHashMap.get("Noida");
 		
-		//tempHashMap.forEach((k,v)->System.out.println(k+" : "+v));
-		tempHashMap.forEach((k,v)->System.out.println(v));
+		
 		lstName.stream().forEach(s->System.out.println(s));
 	}
 }
