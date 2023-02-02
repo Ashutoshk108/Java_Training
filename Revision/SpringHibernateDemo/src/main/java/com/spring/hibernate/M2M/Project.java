@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 
@@ -14,7 +15,7 @@ public class Project {
 	@Column(name="project_name")
 	private String projectName;
 	
-	@ManyToMany(mappedBy="projects")
+	@ManyToMany(mappedBy="projects", fetch=FetchType.EAGER)
 	private List<Emp> employees;
 
 	public int getpId() {
