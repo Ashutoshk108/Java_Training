@@ -19,6 +19,7 @@
 		<mapping class="com.spring.hibernate.oneToMany.BankAccount" />
 		<mapping class="com.spring.hibernate.M2M.Emp" />
 		<mapping class="com.spring.hibernate.M2M.Project" />
+		<mapping class="com.spring.hibernate.states.Product" />
 	</session-factory>
 	
 </hibernate-configuration>

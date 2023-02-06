@@ -1,0 +1,30 @@
+package com.bhavna.services;
+
+import java.util.List;
+
+
+import com.bhavna.entities.User;
+
+public interface UserService {
+	
+	//user operations
+	
+	//create
+	User saveUser(User user);
+	
+	
+	//get all user
+	List<User> getAllUser();
+	
+	
+	//get single user of given userId
+	User getUser(String userId);
+	
+	
+	//delete user
+	String deleteUser(String userId);
+	
+	//update user
+	User updateUser(String userId, User user);
+	
+}
