@@ -6,11 +6,20 @@ public class Example1 {
 		obj.populateArrayWithData();
 		obj.empSortedByName();
 		
-		System.out.println("Employee in HR department: ");
+		System.out.println("\nEmployee in HR department: ");
 		System.out.println(obj.filterEmployeeBasedOnDepartment("HR"));
 		
-		System.out.println("Employees present in haryana:- ");
+		System.out.println("\nEmployees present in haryana:- ");
 		obj.getEmployeesInHaryana();
+		
+		System.out.println("\n");
+		obj.getAverageSalary();
+		
+		System.out.println("\nIncreased Salary:-");
+		obj.increaseSalaryBySomePercentage();
+		
+		System.out.println();
+		obj.groupEmployeeByLocation();
 
 		
 		

@@ -1,8 +1,10 @@
 package com.bhavna.stream;
 
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
 import java.util.stream.Collectors;
 
 
@@ -19,9 +21,13 @@ public class Service {
 	
 	public void empSortedByName() {
 		System.out.println("Employee sorted by their name:-");
+		/*
 		Collections.sort(empLst,(o1,o2)->o1.getName().compareTo(o2.getName()));
 		System.out.println("Id\t Name");
 		empLst.forEach(s->System.out.println(s.getId()+"\t"+s.getName()));
+		*/
+		List<Employee> sortedLst=empLst.stream().sorted(Comparator.comparing(Employee::getName)).collect(Collectors.toList());
+		sortedLst.stream().forEach(e->System.out.println(e));
 	}
 	
 	public List<Employee> filterEmployeeBasedOnDepartment(String department){
@@ -29,8 +35,31 @@ public class Service {
 	}
 	
 	public void getEmployeesInHaryana() {
-		List<Employee> hydEmp=empLst.parallelStream().filter(s->s.getLocation().contentEquals("Haryana")).collect(Collectors.toList());
-		System.out.println(hydEmp);
+		List<Employee> haryanaEmp=empLst.parallelStream().filter(s->s.getLocation().contentEquals("Haryana")).collect(Collectors.toList());
+		haryanaEmp.stream().forEach(e->System.out.println(e));
+	}
+	
+	public void getAverageSalary() {
+		double avgSalary=empLst.stream().mapToDouble(Employee::getSalary).average().orElse(0.0);
+		System.out.println("Average Salray : "+avgSalary);
+		
+	}
+	
+	public void increaseSalaryBySomePercentage() {
+		empLst.stream().filter(s->s.getLocation().contentEquals("Haryana")).forEach(s->s.setSalary((int)(s.getSalary()*1.1)));
+		empLst.stream().forEach(e->System.out.println(e));
+	}
+	
+	public void groupEmployeeByLocation() {
+		Map<String, List<Employee>> empByLocation=empLst.stream().collect(Collectors.groupingBy(Employee::getLocation));
+		for(Entry<String, List<Employee>> entry:empByLocation.entrySet()) {
+			String location=entry.getKey();
+			List<Employee> employees=entry.getValue();
+			System.out.println("Location: "+location);
+			for(Employee emp:employees) {
+				System.out.println(emp);
+			}
+		}
 	}
 	
 }
