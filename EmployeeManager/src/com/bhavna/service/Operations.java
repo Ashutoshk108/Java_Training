@@ -42,8 +42,7 @@ public class Operations {
 	
 	public List<Employee> sortEmployeeBasedOnNameLocation(ArrayList<Employee> empLst){
 		Comparator<Employee> comparingAttributes=Comparator.comparing(Employee::getName).thenComparing(Employee::getLocation);
-		List<Employee> sortedEmployees=(List<Employee>) empLst.stream().sorted(comparingAttributes).collect(Collectors.toList());
-		
+		List<Employee> sortedEmployees=empLst.stream().sorted(comparingAttributes).collect(Collectors.toList());
 		return sortedEmployees;
 	}
 }

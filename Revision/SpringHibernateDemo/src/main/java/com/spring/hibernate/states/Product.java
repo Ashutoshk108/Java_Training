@@ -6,14 +6,14 @@ import javax.persistence.Id;
 @Entity
 public class Product {
 	@Id
-	private int it;
+	private int id;
 	private String name;
 	private String type;
 	public int getIt() {
-		return it;
+		return id;
 	}
-	public void setIt(int it) {
-		this.it = it;
+	public void setIt(int id) {
+		this.id = id;
 	}
 	public String getName() {
 		return name;
@@ -27,9 +27,9 @@ public class Product {
 	public void setType(String type) {
 		this.type = type;
 	}
-	public Product(int it, String name, String type) {
+	public Product(int id, String name, String type) {
 		super();
-		this.it = it;
+		this.id = id;
 		this.name = name;
 		this.type = type;
 	}
@@ -38,7 +38,7 @@ public class Product {
 	}
 	@Override
 	public String toString() {
-		return "Product [it=" + it + ", name=" + name + ", type=" + type + "]";
+		return "Product [id=" + id + ", name=" + name + ", type=" + type + "]";
 	}
 	
 

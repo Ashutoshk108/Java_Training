@@ -1,5 +1,6 @@
 package lambda;
 
+@FunctionalInterface
 public interface FirstFunctionalInterface {
 	void printInfo();
 	
