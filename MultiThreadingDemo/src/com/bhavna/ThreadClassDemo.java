@@ -12,7 +12,7 @@ public class ThreadClassDemo {
 		System.out.println("Starting hello thread...");
 		thread1.start();
 
-		Runnable bye = new DisplayMessage("Goodbye");
+		Runnable bye = new DisplayMessage("World");
 		Thread thread2 = new Thread(bye);
 		thread2.setPriority(Thread.MAX_PRIORITY);
 		thread2.setDaemon(true);
